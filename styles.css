@@ -3,3 +3,24 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.container-article {
+  margin: 5vw;
+}
+
+.title-article {
+  text-align: center;
+  margin: 16px;
+}
+
+.article-img {
+  float: left;
+  height: 100px;
+  width: auto;
+  padding: 0 5px 5px 0;
+}
+
+.article-text {
+  text-align: justify;
+  grid-template: auto;
+}
