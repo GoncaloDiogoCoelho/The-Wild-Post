@@ -1,11 +1,4 @@
 /*Styles that apply to all the page*/
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
-
 :root {
     --navbar-color: #9D103A;
     --navbar-sub-color: #FFC7DC;
@@ -14,6 +7,10 @@
     --background-color: #ECECF0;
     --title-font: ;
     --text-font: ;
+}
+
+body {
+    background-color: var(--background-color);
 }
 
 /*Image carousel*/
@@ -53,20 +50,23 @@
     left: 12%;
     font-size: 3rem;
 }
+*/
 
 .carousel-control-prev, .carousel-control-next {
+    border-radius: 1rem 1rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 15%;
+    height: 15%;
     position: absolute;
-    top: 45%;
-    z-index: 2;
-    padding: 0 0.5rem;
-    border: none;
-    border-radius: 0.25rem;
-    background: none;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 2rem;
+    top: 50%;
 }
 
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 1rem;
+    height: 1rem;
+}
+
+/*
 .left-button {
     left: 0.3rem;
 }
@@ -116,6 +116,8 @@
     margin-top: 7%;
     margin-bottom: 4%;
     border-bottom: 3px solid var(--footer-color);
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 700;
 }
 
 .topic-box {
@@ -142,13 +144,48 @@
     margin-left: 1rem;
     background-color: rgba(0, 0, 0, 0);
     color: var(--footer-color);
-    
-}
-
-.report-title:hover {
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 700;
 }
 
 .article-content {
     text-align: justify;
     padding: 0 0.5rem 0.5rem 0;
+    font-family:'Times New Roman', Times, serif;
+}
+
+@media screen and (min-width: 450px) {
+    .carousel-control-prev, .carousel-control-next {
+        width: 10%;
+        height: 10%;
+    }
+    
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .carousel {
+        display: block;
+        margin: auto;
+        width: 768px;
+    }
+
+    h5 {
+        width: 34rem;
+        color:rgba(255, 255, 255);
+        background-color: rgba(0, 0, 0, 0.5);
+        font-size: 4rem;
+        margin-left: -5rem;
+    }
+
+    .carousel-caption p {
+        width: 30rem;
+        color:rgba(255, 255, 255);
+        background-color: rgba(0, 0, 0, 0.5);
+        margin-top: 1rem;
+        margin-left: 7rem;
+    }
 }
