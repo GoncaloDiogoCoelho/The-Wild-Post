@@ -18,7 +18,7 @@ const topicsContent = [
     {
         topicTitle: "News / Quests",
         articleTitle: "Quest 1",
-        picture: "./src/article-2_img_big.png",
+        picture: "./articles/article-2_quest_img_big.png",
         alternative: "Some of the resources that students have available in Wild Code School",
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis repudiandae, porro iure tempora totam sed officiis ut odio dolore id in beatae perspiciatis."
     }, 
