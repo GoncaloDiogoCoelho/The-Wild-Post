@@ -1,30 +1,26 @@
 //*Image Carousel
-//Creation of the section that will contain the carousel images / articles and the dots to choose the slide we want to see
+//Creation of the section that will contain the carousel images / articles
 const main = document.querySelector("main");
 
 const carousel = document.createElement("section");
 carousel.classList.add("carousel");
 main.appendChild(carousel);
 
-const dotBox = document.createElement("div");
-dotBox.classList.add("dot-box");
-main.appendChild(dotBox);
-
 
 //Object with the contents of each slide
 const slidesContent = [
     {
         number: "1/3",
-        title: "",
-        picture: "",
-        alternative: "",
-        description: ""
+        title: "Article 1",
+        picture: "./src/bridge.jpg",
+        alternative: "Bridge with vegetation around",
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
     }, 
     {
         number: "2/3",
-        title: "",
-        picture: "",
-        alternative: "",
+        title: "Article 2",
+        picture: "./src/article-2_img_small.jpg",
+        alternative: "Two athletes hugging at the end of a race",
         description: ""
     }, 
     {
@@ -42,19 +38,6 @@ function createSlides(numbers, mainTitle, imageURL, alternativeText, text) {
     const slides = document.createElement("div");
     slides.classList.add("slides");
     carousel.appendChild(slides);
-
-    /*Creation of the back and foreword buttons
-    const leftButton = document.createElement("a");
-    leftButton.classList.add("left-button");
-    leftButton.onclick = moveSlides(-1);
-    leftButton.innerHTML = "&#10094;";
-    slides.appendChild(leftButton);
-
-    const rightButton = document.createElement("a");
-    rightButton.classList.add("right-button");
-    rightButton.onclick = moveSlides(1);
-    rightButton.innerHTML = "&#10095;";
-    slides.appendChild(rightButton);*/
 
     //Creation of the content inside the slides
     const numbering = document.createElement("p");
@@ -77,19 +60,43 @@ function createSlides(numbers, mainTitle, imageURL, alternativeText, text) {
     subtitles.classList.add("subtitles");
     subtitles.innerHTML = `${text}`;
     slides.appendChild(subtitles);
-
-    /*Creation of the dots below the slides to show the slide we choose 
-    const individualDot = document.createElement("div");
-    individualDot.classList.add("dot");
-    individualDot.onclick = currentSlide();
-    dotBox.appendChild(individualDot);*/
 };
 
 
 //This loop will repeat the function above for each slide and respective content
 for (let i = 0; i < slidesContent.length; i++) {
-    createSlides(slidesContent[i].number, slidesContent[i].title, slidesContent[i].picture, slidesContent[i].alternative, slidesContent[i].text);
+    createSlides(slidesContent[i].number, slidesContent[i].title, slidesContent[i].picture, slidesContent[i].alternative, slidesContent[i].description);
 };
+
+
+//Buttons that allow us to go back and forward in the images
+const leftButton = document.createElement("button");
+leftButton.classList.add("left-button");
+leftButton.innerHTML = "&#10094;";
+carousel.appendChild(leftButton);
+
+const rightButton = document.createElement("button");
+rightButton.classList.add("right-button");
+rightButton.innerHTML = "&#10095;";
+carousel.appendChild(rightButton);
+
+
+//Creation of the dots below the images that allow us to change to the image we want
+const dotBox = document.createElement("div");
+dotBox.classList.add("dot-box");
+main.appendChild(dotBox);
+
+for (let i = 0; i < 3; i++) {
+    const individualDot = document.createElement("div");
+    individualDot.classList.add("dot");
+    dotBox.appendChild(individualDot);
+}
+
+
+//Will allow for the first slide to be that's active when we load the website 
+const activeSlide = document.querySelector(".slides")
+activeSlide.classList.add("active-slide");
+
 
 //Function that allow to show the current slide or move them back and foreword
 /*let slideIndex = 1;
@@ -137,25 +144,25 @@ main.appendChild(topics);
 //Object with the contents of each topic
 const topicsContent = [
     {
-        topicTitle: "",
-        articleTitle: "",
-        picture: "",
-        alternative: "",
-        description: ""
+        topicTitle: "News / Events",
+        articleTitle: "Event 1",
+        picture: "./src/article-1_img_big.jpg",
+        alternative: "A crowd running the marathon",
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis repudiandae, porro iure tempora totam sed officiis ut odio dolore id in beatae perspiciatis."
     }, 
     {
-        topicTitle: "",
-        articleTitle: "",
-        picture: "",
-        alternative: "",
-        description: ""
+        topicTitle: "News / Quests",
+        articleTitle: "Quest 1",
+        picture: "./src/article-2_img_big.png",
+        alternative: "Some of the resources that students have available in Wild Code School",
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis repudiandae, porro iure tempora totam sed officiis ut odio dolore id in beatae perspiciatis."
     }, 
     {
-        topicTitle: "",
-        articleTitle: "",
-        picture: "",
-        alternative: "",
-        description: ""
+        topicTitle: "Resources / CSS",
+        articleTitle: "CSS 1",
+        picture: "./src/article-1_img_small.png",
+        alternative: "CSS logo",
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis repudiandae, porro iure tempora totam sed officiis ut odio dolore id in beatae perspiciatis."
     }
 ];
 
@@ -181,15 +188,19 @@ function createTopics(topicTitle, imageLink, altText, articleTitle, paragraphs) 
         articleImages.alt = `${altText}`;
         topicBox.appendChild(articleImages);
 
+        const textBox = document.createElement("div");
+        textBox.classList.add("text-box");
+        topicBox.appendChild(textBox);
+
         const reportTitle = document.createElement("h3");
-        reportTitle.classList.add("slide-title");
+        reportTitle.classList.add("report-title");
         reportTitle.innerHTML = `${articleTitle}`;
-        topicBox.appendChild(reportTitle);
+        textBox.appendChild(reportTitle);
     
         const articleContent = document.createElement("p");
         articleContent.classList.add("article-content");
         articleContent.innerHTML = `${paragraphs}`;
-        topicBox.appendChild(subtitles);
+        textBox.appendChild(articleContent);
     };
 
 //This loop will repeat the function above for each slide and respective content

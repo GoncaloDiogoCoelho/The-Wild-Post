@@ -1,0 +1,153 @@
+/*Styles that apply to all the page*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: var(--background-color);
+}
+
+:root {
+    --navbar-color: #9D103A;
+    --navbar-sub-color: #FFC7DC;
+    --footer-color: #6F0128;
+    --title-color: #F1D03B;
+    --background-color: #ECECF0;
+    --title-font: ;
+    --text-font: ;
+}
+
+/*Image carousel*/
+.carousel {
+    width: 100vw;
+    height: 38vh;
+    position: relative;
+}
+
+.slides {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    padding: 0;
+}
+
+.slides.active-slide {
+    opacity: 1;
+}
+
+.numbering {
+    color: black;
+    font-weight: 700;
+    background-color: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+}
+
+.slide-title {
+    background-color: rgba(255, 255, 255, 0.4);
+    position: absolute;
+    top: 25%;
+    left: 12%;
+    font-size: 3rem;
+}
+
+.left-button, .right-button {
+    position: absolute;
+    top: 45%;
+    z-index: 2;
+    padding: 0 0.5rem;
+    border: none;
+    border-radius: 0.25rem;
+    background: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 2rem;
+}
+
+.left-button {
+    left: 0.3rem;
+}
+
+.right-button {
+    right: 0.3rem;
+}
+
+.carousel-images {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+.subtitles {
+    position: absolute;
+    bottom: 1%;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    left: 50%;
+}
+
+.dot-box {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+
+.dot {
+    display: inline-block;
+    border-radius: 50%;
+    background-color: grey;
+    width: 0.8rem;
+    height: 0.8rem;
+    margin: 0 0.3rem;
+}
+
+/*Topic news*/
+.topics-container {
+    margin: 0 3%;
+}
+
+.topic-title {
+    margin-top: 7%;
+    margin-bottom: 4%;
+    border-bottom: 3px solid var(--footer-color);
+}
+
+.topic-box {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 5%;
+    border: 20%;
+}
+
+.article-images {
+    width: 100%;
+    height: 100%;
+    grid-column: 1 / 2;
+    align-self: center;
+}
+
+.text-box {
+    grid-column: 2 / 3;
+    align-self: center;
+}
+
+.report-title {
+    margin-bottom: 3%;
+    margin-left: 1rem;
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--footer-color);
+    
+}
+
+.report-title:hover {
+}
+
+.article-content {
+    text-align: justify;
+    padding: 0 0.5rem 0.5rem 0;
+}
