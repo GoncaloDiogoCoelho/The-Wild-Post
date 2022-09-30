@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     border: 0;
-    background-color: var(--background-color);
 }
 
 :root {
@@ -18,8 +17,9 @@
 }
 
 /*Image carousel*/
+/*
 .carousel {
-    width: 100vw;
+    width: 98vw;
     height: 38vh;
     position: relative;
 }
@@ -54,7 +54,7 @@
     font-size: 3rem;
 }
 
-.left-button, .right-button {
+.carousel-control-prev, .carousel-control-next {
     position: absolute;
     top: 45%;
     z-index: 2;
@@ -85,7 +85,7 @@
 
 .subtitles {
     position: absolute;
-    bottom: 1%;
+    bottom: 2.5%;
     background-color: rgba(255, 255, 255, 0.5);
     font-size: 1rem;
     left: 50%;
@@ -105,6 +105,7 @@
     height: 0.8rem;
     margin: 0 0.3rem;
 }
+*/
 
 /*Topic news*/
 .topics-container {
@@ -126,7 +127,7 @@
 
 .article-images {
     width: 100%;
-    height: 100%;
+    height: auto;
     grid-column: 1 / 2;
     align-self: center;
 }
