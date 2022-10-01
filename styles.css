@@ -222,3 +222,61 @@ body {
   text-align: justify;
   grid-template: auto;
 }
+
+/*=====================FAQ page=======================================*/
+/* Style the buttons that are used to open and close the faq-page body */
+.faq-heading{
+text-align: center;
+
+}
+.faq-img {
+  display: flex;
+  width: cover;
+  height: 200px;
+  object-fit: cover;
+  object-position:contain;
+  padding: 5px;
+
+}
+.faq-page {
+  /* background-color: #eee; */
+  color: rgb(68, 68, 68);
+  cursor: pointer;
+  padding: 30px 20px;
+  width: 60%;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  margin: auto;
+}
+.faq-body{
+  margin: auto;
+  /* text-align: center; */
+ width: 70%; 
+ padding: auto;
+ 
+}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.faq-page:hover {
+  background-color:var(--background-color);
+}
+/* Style the faq-page panel. Note: hidden by default */
+.faq-body {
+  padding: 0 18px;
+  background-color: var(--background-color);
+  display: none;
+  overflow: hidden;
+}
+.faq-page:after {
+  content: '\02795';
+  /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+.active:after {
+  content: "\2796";
+  /* Unicode character for "minus" sign (-) */
+}
