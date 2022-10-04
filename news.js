@@ -1,3 +1,5 @@
+// Array of object to list the article from news
+
 const arrayNewsArticlesObject = [
   {
     title: "QUEST 1",
@@ -83,7 +85,7 @@ const arrayNewsArticlesObject = [
 
 const containerListArticles = document.querySelector(".containerListArticles");
 
-// Filling with the page with article with the function createCard
+// Filling the page with article with the function createCard
 
 function createCard(title, sum, imgUrl) {
   const cardArticle = document.createElement("div");
@@ -108,6 +110,8 @@ function createCard(title, sum, imgUrl) {
   cardArticle.appendChild(divCardText);
 }
 
+//Loop which launch at loading
+
 for (i = 0; i < arrayNewsArticlesObject.length; i++) {
   createCard(
     arrayNewsArticlesObject[i].title,
@@ -115,6 +119,8 @@ for (i = 0; i < arrayNewsArticlesObject.length; i++) {
     arrayNewsArticlesObject[i].img
   );
 }
+
+//Part reserve for the tag selection using again the createCard function
 
 const tagQuests = document.querySelector(".tagQuests");
 const tagEvents = document.querySelector(".tagEvents");
@@ -156,6 +162,8 @@ tagAll.onclick = function () {
     );
   }
 };
+
+//Part of code which display the random article tilde on the top
 
 const randomArticleTop = document.querySelector(".randomTop");
 const randomArticleIndex = Math.floor(
