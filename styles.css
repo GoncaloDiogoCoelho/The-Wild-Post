@@ -146,8 +146,6 @@ box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   margin-right: 10px;
 }
 
-
-
 .toggle-resources li {
   box-shadow: 0 -1.5px 0 var(--navbar-color) inset;
 }
@@ -288,11 +286,9 @@ box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     width: 100px;
   }
 
-
   .toggle-resources {
     position: absolute;
     display: inline-flex;
-  
     justify-content: space-between;
     align-items: flex-start;
     width: 300px;
@@ -305,8 +301,6 @@ box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     right: 0px;
     transition: 0.2s ease-in-out;
   }
-
-
 
   .menuBurger input:checked ~ .toggle-resources {
     display: block;
