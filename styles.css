@@ -1,4 +1,5 @@
-/* ========== Header Menu - Burger Menu ========== */
+/* Generals parameters styling */
+
 * {
   border: 0;
   margin: 0;
@@ -21,12 +22,18 @@ body {
   background-color: var(--background-color);
 }
 
+h2 {
+  text-align: center;
+}
+
+/* ========== Header Menu - Burger Menu ========== */
+
 .container {
   padding-top: 60px;
 }
 
 .random {
-    padding: 60px;
+  padding: 60px;
 }
 
 .logoHeader {
@@ -235,11 +242,45 @@ body {
 }
 /* ========== Header Menu - Burger Menu ========== */
 
-/*=========Article==========================*/
+/* =================Topic page========================= */
 
-.container-article {
-  margin: 5vw;
+.randomTop {
+  height: 200px;
+  width: 100%;
+  background-size: cover;
 }
+
+.tagContainer {
+  display: flex;
+}
+
+.containerListArticles {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
+
+.cardArticle {
+  display: flex;
+}
+
+.divCardImage {
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  padding: auto;
+}
+
+.divCardText {
+  text-align: justify;
+}
+
+.cardArticle:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+/*=========Article==========================*/
 
 .title-article {
   text-align: center;
