@@ -54,6 +54,7 @@ h2 {
   align-items: center;
   background: linear-gradient(var(--navbar-color), var(--footer-color));
   transition: 0.3s;
+  z-index: 2;
 }
 
 .headerLogo a {
