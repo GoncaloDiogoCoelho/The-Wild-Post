@@ -36,35 +36,35 @@ const arrayNewsArticlesObject = [
   },
   {
     title: "EVENT 1",
-    type: "quest",
+    type: "event",
     resume:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitirepudiandae, porro iure tempora totam sed officiis ut odio dolore idin beatae perspiciatis..",
     img: "url('articles/article-1_event_img_small.jpg')",
   },
   {
     title: "EVENT 2",
-    type: "quest",
+    type: "event",
     resume:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitirepudiandae, porro iure tempora totam sed officiis ut odio dolore idin beatae perspiciatis..",
     img: "url('articles/article-1_event_img_small.jpg')",
   },
   {
     title: "EVENT 3",
-    type: "quest",
+    type: "event",
     resume:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitirepudiandae, porro iure tempora totam sed officiis ut odio dolore idin beatae perspiciatis..",
     img: "url('articles/article-1_event_img_small.jpg')",
   },
   {
     title: "EVENT 4",
-    type: "quest",
+    type: "event",
     resume:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitirepudiandae, porro iure tempora totam sed officiis ut odio dolore idin beatae perspiciatis..",
     img: "url('articles/article-1_event_img_small.jpg')",
   },
   {
     title: "EVENT 5",
-    type: "quest",
+    type: "event",
     resume:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitirepudiandae, porro iure tempora totam sed officiis ut odio dolore idin beatae perspiciatis..",
     img: "url('articles/article-1_event_img_small.jpg')",
@@ -98,10 +98,48 @@ function createCard(title, sum, imgUrl) {
   cardArticle.appendChild(divCardText);
 }
 
-for (i = 0; i < arrayNewsArticlesObject.length; i++) {
-  createCard(
-    arrayNewsArticlesObject[i].title,
-    arrayNewsArticlesObject[i].resume,
-    arrayNewsArticlesObject[i].img
-  );
-}
+// for (i = 0; i < arrayNewsArticlesObject.length; i++) {
+//   createCard(
+//     arrayNewsArticlesObject[i].title,
+//     arrayNewsArticlesObject[i].resume,
+//     arrayNewsArticlesObject[i].img
+//   );
+// }
+
+const tagQuests = document.querySelector(".tagQuests");
+const tagEvents = document.querySelector(".tagEvents");
+const tagAll = document.querySelector(".tagAll");
+
+tagQuests.onclick = function () {
+  for (i = 0; i < arrayNewsArticlesObject.length; i++) {
+    if (arrayNewsArticlesObject[i].type == "quest") {
+      createCard(
+        arrayNewsArticlesObject[i].title,
+        arrayNewsArticlesObject[i].resume,
+        arrayNewsArticlesObject[i].img
+      );
+    }
+  }
+};
+
+tagEvents.onclick = function () {
+  for (i = 0; i < arrayNewsArticlesObject.length; i++) {
+    if (arrayNewsArticlesObject[i].type == "event") {
+      createCard(
+        arrayNewsArticlesObject[i].title,
+        arrayNewsArticlesObject[i].resume,
+        arrayNewsArticlesObject[i].img
+      );
+    }
+  }
+};
+
+tagAll.onclick = function () {
+  for (i = 0; i < arrayNewsArticlesObject.length; i++) {
+    createCard(
+      arrayNewsArticlesObject[i].title,
+      arrayNewsArticlesObject[i].resume,
+      arrayNewsArticlesObject[i].img
+    );
+  }
+};

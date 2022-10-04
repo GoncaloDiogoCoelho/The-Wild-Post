@@ -211,6 +211,10 @@ h2 {
 
 /* =================Topic page========================= */
 
+.tagContainer {
+  display: flex;
+}
+
 .containerListArticles {
   display: flex;
   flex-direction: column;
@@ -223,7 +227,8 @@ h2 {
 
 .divCardImage {
   width: 100%;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .divCardText {
