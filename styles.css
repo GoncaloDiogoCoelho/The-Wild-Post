@@ -53,6 +53,7 @@ box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   background: linear-gradient(var(--navbar-color), var(--footer-color));
   transition: 0.3s;
   z-index: 2;
+  top: 0;
 }
 
 .headerLogo {
