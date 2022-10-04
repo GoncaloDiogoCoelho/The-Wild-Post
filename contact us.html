@@ -1,72 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;600&display=swap" rel="stylesheet">
-    
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<header class="header">
-            <!-- #=====# Burger Menu #=====# -->
-            <div class="headerLogo">
-                <a href="#">
-                    <img src="imgs/jornal-wild-post-logo.png" width="140px" height="35px" alt="</>jornal" class="logoHeader">
-                </a>
-            </div>
-    
-            <div class="navigation">
-                
-                    <input type="checkbox" class="toggle-menu">
-                    <div class="burger"></div>
-    
-                <ul class="menuBurger">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="news.html">News</a></li>
-                        <li>
-                            <input type="checkbox" class="toggle-resources-check">
-                            <a href="#" class="resourcesMenu">Resources</a>
-                        <ul class="toggle-resources">
-                            <li><a href="article_2.html">Articles</a></li>
-                            <li><a href="article_3.html">Quests</a></li>
-                            <li><a href="article_4.html">Events</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="fqa.html">FAQ</a></li>
-                    <li><a href="game.html">Game</a></li>
-                    <li><a href="contact us.html">Contact Us</a></li>
-                </ul>
-            </div>
-                        <!-- #=====# Burger Menu #=====# -->
-</header>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <!-- #=====# Burger Menu #=====# -->
+      <div class="headeLogo">
+        <a href="#">
+          <img
+            src="imgs/jornal-wild-post-logo.png"
+            width="180px"
+            height="50px"
+            alt="jornal"
+            class="logoHeader"
+          />
+        </a>
+      </div>
 
-           <!-- #=====# FOOTER BAR #=====# -->
+      <div class="navigation">
+        <input type="checkbox" class="toggle-menu" />
+        <div class="burger"></div>
 
-           <footer>
-            <div class="footer">
-                <div class="socials">
-                    <ul>
-                        <li><a href="" class="twitter">Twitter</a></li>
-                        <li><a href="" class="linkedin">LinkedIn</a></li>
-                        <li><a href="" class="facebook">Facebook</a></li>
-                        <li><a href="" class="instagram">Instagram</a></li>
-                    </ul>
-                </div>
-                <div class="othersFooter">
-                    <div class="copyright">
-                        <p>&copy; All Rights Reserved - The Wild Post Co.</p>
-                    </div>
-                    <div class="contactLink">
-                        <p><a href="contact us.html">Contact Us</a></p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-                    <!-- #=====# FOOTER BAR #=====# -->
-</body>
+        <ul class="menuBurger">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="news.html">News</a></li>
+          <li>
+            <input type="checkbox" class="toggle-resources-check" />
+            <a href="#" class="resourcesMenu">Resources</a>
+            <ul class="toggle-resources">
+              <li><a href="article_2.html">Articles</a></li>
+              <li><a href="article_3.html">Quests</a></li>
+              <li><a href="article_4.html">Events</a></li>
+            </ul>
+          </li>
+          <li><a href="fqa.html">FAQ</a></li>
+          <li><a href="game.html">Game</a></li>
+          <li><a href="contact us.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <!-- #=====# Burger Menu #=====# -->
+    </header>
+    <main class="container">
+      <div>
+        <h1>Contact us</h1>
+      </div>
+      <section id="contact" class="container">
+        <form id="contactForm">
+          <label for="name">Name:</label><br />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            required
+          /><br />
+          <label for="email">Email:</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          /><br />
+          <label for="message">Message:</label><br />
+          <textarea id="message" name="message"></textarea><br />
+          <br />
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
+      <div>
+        <h2>Other Resources</h2>
+        <ul>
+          <li>
+            <aa href="mailto: nunosantosmatoscorreia@gmail.com">
+              Email: wildpost@gmail.com</aa
+            >
+          </li>
+          <li><a>Telephone : +351 980 123 098</a></li>
+          <li>
+            <a>Adress: R. Visc. de Santarém 73A piso -2, 1000-286 Lisboa</a>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <script src="scriptcontact.js"></script>
+  </body>
 </html>
