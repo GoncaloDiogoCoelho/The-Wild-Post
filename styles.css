@@ -52,6 +52,7 @@ box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   align-items: center;
   background: linear-gradient(var(--navbar-color), var(--footer-color));
   transition: 0.3s;
+  z-index: 2;
 }
 
 .headerLogo {
@@ -346,7 +347,7 @@ box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .topic-title, .game-title {
-  margin-top: 7%;
+  margin-top: 12%;
   margin-bottom: 4%;
   border-bottom: 3px solid var(--footer-color);
   font-family:'Times New Roman', Times, serif;
@@ -444,6 +445,10 @@ iframe {
       background-color: rgba(0, 0, 0, 0.2);
       margin-top: 1rem;
       margin-left: 10rem;
+  }
+
+  .topic-title, .game-title {
+    margin-top: 7%;
   }
 
    .article-images {
