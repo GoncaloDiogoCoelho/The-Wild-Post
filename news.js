@@ -98,19 +98,20 @@ function createCard(title, sum, imgUrl) {
   cardArticle.appendChild(divCardText);
 }
 
-// for (i = 0; i < arrayNewsArticlesObject.length; i++) {
-//   createCard(
-//     arrayNewsArticlesObject[i].title,
-//     arrayNewsArticlesObject[i].resume,
-//     arrayNewsArticlesObject[i].img
-//   );
-// }
+for (i = 0; i < arrayNewsArticlesObject.length; i++) {
+  createCard(
+    arrayNewsArticlesObject[i].title,
+    arrayNewsArticlesObject[i].resume,
+    arrayNewsArticlesObject[i].img
+  );
+}
 
 const tagQuests = document.querySelector(".tagQuests");
 const tagEvents = document.querySelector(".tagEvents");
 const tagAll = document.querySelector(".tagAll");
 
 tagQuests.onclick = function () {
+  containerListArticles.innerHTML = "";
   for (i = 0; i < arrayNewsArticlesObject.length; i++) {
     if (arrayNewsArticlesObject[i].type == "quest") {
       createCard(
@@ -123,6 +124,7 @@ tagQuests.onclick = function () {
 };
 
 tagEvents.onclick = function () {
+  containerListArticles.innerHTML = "";
   for (i = 0; i < arrayNewsArticlesObject.length; i++) {
     if (arrayNewsArticlesObject[i].type == "event") {
       createCard(
@@ -135,6 +137,7 @@ tagEvents.onclick = function () {
 };
 
 tagAll.onclick = function () {
+  containerListArticles.innerHTML = "";
   for (i = 0; i < arrayNewsArticlesObject.length; i++) {
     createCard(
       arrayNewsArticlesObject[i].title,
