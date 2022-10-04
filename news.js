@@ -161,6 +161,14 @@ const randomArticleTop = document.querySelector(".randomTop");
 const randomArticleIndex = Math.floor(
   Math.random() * arrayNewsArticlesObject.length
 );
+const titleTopRandom = document.createElement("h3");
+const sumTopRandom = document.createElement("p");
 
+titleTopRandom.innerHTML = arrayNewsArticlesObject[randomArticleIndex].title;
+sumTopRandom.innerHTML = arrayNewsArticlesObject[randomArticleIndex].resume;
 randomArticleTop.style.backgroundImage =
   arrayNewsArticlesObject[randomArticleIndex].imgBig;
+titleTopRandom.classList.add("titleTopRandom");
+sumTopRandom.classList.add("sumTopRandom");
+randomArticleTop.appendChild(titleTopRandom);
+randomArticleTop.appendChild(sumTopRandom);
