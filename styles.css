@@ -453,6 +453,10 @@ iframe {
 /*=====================FAQ page=======================================*/
 /* Style the buttons that are used to open and close the faq-page body */
 
+.faq-main{
+  padding-top:60px;
+}
+
 .faq-heading{
 text-align: center;
 
@@ -461,14 +465,14 @@ text-align: center;
   display: flex;
   width: cover;
   height: 200px;
+  justify-content: center;
   object-fit: cover;
-  object-position:center;
   padding: 5px;
 
 }
-body{
+/*body{
   font-family: 'Work Sans', sans-serif;
-}
+} */
 .faq-heading{
   border-bottom: #777;
   padding: 20px 60px;
@@ -496,7 +500,7 @@ flex-direction: column;
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active,
 .faq-page:hover {
-  background-color: #F9F9F9;
+  background-color: none;
 }
 /* Style the faq-page panel. Note: hidden by default */
 .faq-body {
