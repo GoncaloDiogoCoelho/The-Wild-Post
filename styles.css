@@ -54,6 +54,7 @@ h2 {
   align-items: center;
   background: linear-gradient(var(--navbar-color), var(--footer-color));
   transition: 0.3s;
+  z-index: 2;
 }
 
 .headerLogo a {
@@ -244,6 +245,11 @@ h2 {
 
 /*=========Main page==========================*/
 /*Image carousel*/
+.carousel {
+  display: absolute;
+  top: 50px;
+}
+
 .carousel-control-prev, .carousel-control-next {
   border-radius: 1rem 1rem;
   background-color: rgba(255, 255, 255, 0.5);
@@ -265,7 +271,7 @@ h2 {
 }
 
 .topic-title, .game-title {
-  margin-top: 7%;
+  margin-top: 12%;
   margin-bottom: 4%;
   border-bottom: 3px solid var(--footer-color);
   font-family:'Times New Roman', Times, serif;
@@ -363,6 +369,10 @@ iframe {
       background-color: rgba(0, 0, 0, 0.2);
       margin-top: 1rem;
       margin-left: 10rem;
+  }
+
+  .topic-title, .game-title {
+    margin-top: 7%;
   }
 
    .article-images {
