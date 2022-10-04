@@ -211,6 +211,12 @@ h2 {
 
 /* =================Topic page========================= */
 
+.randomTop {
+  height: 200px;
+  width: 100%;
+  background-size: cover;
+}
+
 .tagContainer {
   display: flex;
 }

@@ -4,35 +4,40 @@ const arrayNewsArticlesObject = [
     type: "quest",
     resume:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitirepudiandae, porro iure tempora totam sed officiis ut odio dolore idin beatae perspiciatis..",
-    img: "url('articles/article-1_css_img_big.jpg')",
+    img: "url('articles/article-1_quest_img_small.png')",
+    imgBig: "url('articles/article-1_quest_img_big.png')",
   },
   {
     title: "QUEST 2",
     type: "quest",
     resume:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitirepudiandae, porro iure tempora totam sed officiis ut odio dolore idin beatae perspiciatis..",
-    img: "url('articles/article-1_css_img_big.jpg')",
+    img: "url('articles/article-1_quest_img_small.png')",
+    imgBig: "url('articles/article-1_quest_img_big.png')",
   },
   {
     title: "QUEST 3",
     type: "quest",
     resume:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitirepudiandae, porro iure tempora totam sed officiis ut odio dolore idin beatae perspiciatis..",
-    img: "url('articles/article-1_css_img_big.jpg')",
+    img: "url('articles/article-1_quest_img_small.png')",
+    imgBig: "url('articles/article-1_quest_img_big.png')",
   },
   {
     title: "QUEST 4",
     type: "quest",
     resume:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitirepudiandae, porro iure tempora totam sed officiis ut odio dolore idin beatae perspiciatis..",
-    img: "url('articles/article-1_css_img_big.jpg')",
+    img: "url('articles/article-1_quest_img_small.png')",
+    imgBig: "url('articles/article-1_quest_img_big.png')",
   },
   {
     title: "QUEST 5",
     type: "quest",
     resume:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitirepudiandae, porro iure tempora totam sed officiis ut odio dolore idin beatae perspiciatis..",
-    img: "url('articles/article-1_css_img_big.jpg')",
+    img: "url('articles/article-1_quest_img_small.png')",
+    imgBig: "url('articles/article-1_quest_img_big.png')",
   },
   {
     title: "EVENT 1",
@@ -40,6 +45,7 @@ const arrayNewsArticlesObject = [
     resume:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitirepudiandae, porro iure tempora totam sed officiis ut odio dolore idin beatae perspiciatis..",
     img: "url('articles/article-1_event_img_small.jpg')",
+    imgBig: "url('articles/article-1_event_img_big.jpg')",
   },
   {
     title: "EVENT 2",
@@ -47,6 +53,7 @@ const arrayNewsArticlesObject = [
     resume:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitirepudiandae, porro iure tempora totam sed officiis ut odio dolore idin beatae perspiciatis..",
     img: "url('articles/article-1_event_img_small.jpg')",
+    imgBig: "url('articles/article-1_event_img_big.jpg')",
   },
   {
     title: "EVENT 3",
@@ -54,6 +61,7 @@ const arrayNewsArticlesObject = [
     resume:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitirepudiandae, porro iure tempora totam sed officiis ut odio dolore idin beatae perspiciatis..",
     img: "url('articles/article-1_event_img_small.jpg')",
+    imgBig: "url('articles/article-1_event_img_big.jpg')",
   },
   {
     title: "EVENT 4",
@@ -61,6 +69,7 @@ const arrayNewsArticlesObject = [
     resume:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitirepudiandae, porro iure tempora totam sed officiis ut odio dolore idin beatae perspiciatis..",
     img: "url('articles/article-1_event_img_small.jpg')",
+    imgBig: "url('articles/article-1_event_img_big.jpg')",
   },
   {
     title: "EVENT 5",
@@ -68,6 +77,7 @@ const arrayNewsArticlesObject = [
     resume:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitirepudiandae, porro iure tempora totam sed officiis ut odio dolore idin beatae perspiciatis..",
     img: "url('articles/article-1_event_img_small.jpg')",
+    imgBig: "url('articles/article-1_event_img_big.jpg')",
   },
 ];
 
@@ -146,3 +156,11 @@ tagAll.onclick = function () {
     );
   }
 };
+
+const randomArticleTop = document.querySelector(".randomTop");
+const randomArticleIndex = Math.floor(
+  Math.random() * arrayNewsArticlesObject.length
+);
+
+randomArticleTop.style.backgroundImage =
+  arrayNewsArticlesObject[randomArticleIndex].imgBig;
