@@ -61,7 +61,7 @@ function createTopics(NewsLink, topicTitle, imageLink, altText, articleTitle, pa
         articleImages.classList.add("article-images");
         articleImages.src = `${imageLink}`;
         articleImages.alt = `${altText}`;
-        topicBox.appendChild(articleImages);
+        topicLink.appendChild(articleImages);
 
         const textBox = document.createElement("div");
         textBox.classList.add("text-box");
