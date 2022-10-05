@@ -455,6 +455,7 @@ iframe {
 
 .faq-main{
   padding-top:60px;
+  padding-bottom: 60px;
 }
 
 .faq-heading{
@@ -464,7 +465,7 @@ text-align: center;
 .faq-img {
   display: flex;
   width: cover;
-  height: 200px;
+  height: 180px;
   justify-content: center;
   object-fit: cover;
   padding: 5px;
@@ -488,12 +489,13 @@ flex-direction: column;
   /* background-color: #eee; */
   color: #444;
   cursor: pointer;
-  padding: 30px 20px;
-  width: 60%;
+  padding: 20px 5px;
+  width: 65%;
   border: none;
   outline: none;
   transition: 0.4s;
   margin: auto;
+  
 }
 
 
@@ -511,7 +513,9 @@ flex-direction: column;
 }
 
 .faq-answer {
-  padding: 0 18px;
+  padding: 0 5px;
+  margin: 2px;
+  text-align: justify;
   background-color:none;
   display: none;
   overflow: hidden;

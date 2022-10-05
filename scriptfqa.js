@@ -1,17 +1,17 @@
 const questionAndAnswer =[
     {
-        question: "What is an FAQ Page?",
-        answer: "qsqsqsqwdwqeceqcevcewve qwcqwcwqc qwcqwcqwcwq    qecwecewcewc      wecwecwe. asdqwdqwdqwdwq.rtebrtebtr.",
+        question: "What is  the Wild Post?",
+        answer: "The wild post is a journal made for the alumni and instructors of wild code school. Place where we can find news, resources, quests and other subjects related to the world of wild code school",
     },
 
     {
         question: "Why do you need an FAQ page?",
-        answer: "qsqsqsqwdwqeceqcevcewve qwcqwcwqc qwcqwcqwcwq    qecwecewcewc      wecwecwe. asdqwdqwdqwdwq.rtebrtebtr.",
+        answer: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore ratione ipsam adipisci possimus nulla. Alias placeat temporibus quia a dolore quod, vitae commodi at nihil in quis rem assumenda animi?",
     },
 
     {
         question: "Does it improves the user experience of a website?",
-        answer: "qsqsqsqwdwqeceqcevcewve qwcqwcwqc qwcqwcqwcwq    qecwecewcewc      wecwecwe. asdqwdqwdqwdwq.rtebrtebtr.",
+        answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas architecto illo odio aliquid at minima sint suscipit aliquam asperiores. Pariatur architecto inventore et laboriosam accusamus debitis, fugit natus aperiam. Veritatis.",
     },
 ]
 
