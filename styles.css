@@ -500,7 +500,7 @@ flex-direction: column;
 
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active,
+.activeus,
 .faq-page:hover {
   background-color: none;
 }
@@ -528,13 +528,71 @@ flex-direction: column;
   float: right;
   margin-left: 5px;
 }
-.active:after {
+.activeus:after {
   content: "\2796";
   /* Unicode character for "minus" sign (-) */
 }
 
 
 /* =================Contact page================================== */
+
+.contactTitle{
+  padding: 25px;
+  text-align: center;
+}
+
+#contact{
+ padding-top: 10px;
+}
+
+#name{
+  margin-bottom: 5px;
+  margin-left: 10px;
+  width: 300px;
+  height: 25px;
+  border: 2px solid var(--navbar-color);
+  border-radius: 5px;
+}
+
+#email{
+  margin-bottom: 5px;
+  margin-left: 10px;
+  width: 300px;
+  height: 25px;
+  border: 2px solid var(--navbar-color);
+  border-radius: 5px;
+  
+}
+
+#message{
+  margin-bottom: 5px;
+  margin-left: 10px;
+  width: 300px;
+  height: 80px;
+  border: 2px solid var(--navbar-color);
+  border-radius: 5px;
+}
+
+#submitbutton{
+  margin-bottom: 5px;
+  margin-left: 114px;
+  width: 100px;
+  height: 30px;
+  border: 2px solid rgb(125, 162, 237);
+  background-color:  var(--navbar-sub-color);
+  border-radius: 5px;
+  
+}
+
+
+.otherresources{
+padding: 40px;
+}
+
+.listcontact{
+  margin-left: 10px;
+}
+
 
 form {
   margin-top: 30px;
