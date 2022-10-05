@@ -37,7 +37,7 @@ const topicsContent = [
     }
 ];
 
-function createTopics(NewsLink, topicTitle, imageLink, altText, articleTitle, paragraph, paragraphTwo) {
+function createTopics(topicTitle, imageLink, altText, articleTitle, paragraph, paragraphTwo, NewsLink) {
     //Creation of one topic section and respective title
         const oneTopic = document.createElement("div");
         oneTopic.classList.add("topic");
@@ -52,10 +52,6 @@ function createTopics(NewsLink, topicTitle, imageLink, altText, articleTitle, pa
         const topicBox = document.createElement("div");
         topicBox.classList.add("topic-box");
         oneTopic.appendChild(topicBox);
-
-        const topicLink = document.createElement("a");
-        topicLink.href = `${NewsLink}`
-        topicBox.appendChild(topicLink);
 
         const articleImages = document.createElement("img");
         articleImages.classList.add("article-images");
@@ -81,11 +77,17 @@ function createTopics(NewsLink, topicTitle, imageLink, altText, articleTitle, pa
         articleContentTwo.classList.add("article-content-hide");
         articleContentTwo.innerHTML = `${paragraphTwo}`;
         textBox.appendChild(articleContentTwo);
+        
+        const topicLink = document.createElement("a");
+        topicLink.classList.add("read-more");
+        topicLink.href = `${NewsLink}`;
+        topicLink.innerHTML = "Read more &#8594;";
+        textBox.appendChild(topicLink);
     };
 
 //This loop will repeat the function above for each slide and respective content
 for (let j = 0; j < topicsContent.length; j++) {
-    createTopics(topicsContent[j].articleLink, topicsContent[j].topicTitle, topicsContent[j].picture, topicsContent[j].alternative, topicsContent[j].articleTitle, topicsContent[j].description, topicsContent[j].descriptionTwo);
+    createTopics(topicsContent[j].topicTitle, topicsContent[j].picture, topicsContent[j].alternative, topicsContent[j].articleTitle, topicsContent[j].description, topicsContent[j].descriptionTwo, topicsContent[j].articleLink);
 };
 
 

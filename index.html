@@ -7,6 +7,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;600&display=swap"
       rel="stylesheet"
     />
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,12 +17,12 @@
   <body>
     <header class="header">
       <!-- #=====# Burger Menu #=====# -->
-      <div class="headeLogo">
-        <a href="#">
+      <div class="headerLogo">
+        <a href="main-page.html">
           <img
             src="imgs/jornal-wild-post-logo.png"
-            width="180px"
-            height="50px"
+            width="140px"
+            height="35px"
             alt="</>jornal"
             class="logoHeader"
           />
@@ -33,9 +34,9 @@
         <div class="burger"></div>
 
         <ul class="menuBurger">
-          <li><a href="index.html">Home</a></li>
+          <li><a href="main-page.html">Home</a></li>
           <li><a href="news.html">News</a></li>
-          <li>
+          <li class="resourcesTab">
             <input type="checkbox" class="toggle-resources-check" />
             <a href="#" class="resourcesMenu">Resources</a>
             <ul class="toggle-resources">
@@ -44,7 +45,7 @@
               <li><a href="article_4.html">Events</a></li>
             </ul>
           </li>
-          <li><a href="fqa.html">FAQ</a></li>
+          <li class="faqDown"><a href="fqa.html">FAQ</a></li>
           <li><a href="game.html">Game</a></li>
           <li><a href="contact us.html">Contact Us</a></li>
         </ul>
@@ -52,7 +53,7 @@
       <!-- #=====# Burger Menu #=====# -->
     </header>
 
-    <div class="random">
+    <div class="container">
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae porro,
       laborum necessitatibus veniam et magnam, similique doloremque accusamus ex
       libero facilis! Explicabo sequi alias voluptatem officia in dicta dolorum
@@ -107,6 +108,31 @@
       distinctio omnis pariatur perferendis dolore? Quis placeat eligendi omnis
       nobis dignissimos labore tenetur sunt nulla consequatur hic.
     </div>
+
+    <!-- #=====# FOOTER BAR #=====# -->
+
+    <footer>
+      <div class="footer">
+        <div class="socials">
+          <ul>
+            <li><a href="" class="twitter">Twitter</a></li>
+            <li><a href="" class="linkedin">LinkedIn</a></li>
+            <li><a href="" class="facebook">Facebook</a></li>
+            <li><a href="" class="instagram">Instagram</a></li>
+          </ul>
+        </div>
+        <div class="othersFooter">
+          <div class="copyright">
+            <p>&copy; All Rights Reserved - The Wild Post Co.</p>
+          </div>
+          <div class="contactLink">
+            <p><a href="contact us.html">Contact Us</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- #=====# FOOTER BAR #=====# -->
+
     <script src="script.js">
       import header from "./burger_menu.js"
     </script>
