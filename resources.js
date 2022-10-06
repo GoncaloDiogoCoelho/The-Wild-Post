@@ -237,6 +237,7 @@ tagAll.onclick = function () {
 //Part of code which display the random article tilde on the top
 
 const randomArticleTop = document.querySelector(".randomTop");
+const childRandom = document.querySelector(".childRandom");
 const randomArticleIndex = Math.floor(
   Math.random() * arrayResourcesArticlesObject.length
 );
@@ -254,6 +255,6 @@ titleTopRandom.classList.add("titleTopRandom");
 sumTopRandom.classList.add("sumTopRandom");
 readMore.href = arrayResourcesArticlesObject[randomArticleIndex].link;
 readMore.innerHTML = "<p>Read more...</p>";
-randomArticleTop.appendChild(titleTopRandom);
-randomArticleTop.appendChild(sumTopRandom);
-randomArticleTop.appendChild(readMore);
+childRandom.appendChild(titleTopRandom);
+childRandom.appendChild(sumTopRandom);
+childRandom.appendChild(readMore);
