@@ -357,7 +357,7 @@ display: none;
 .topic-title, .game-title {
   margin-bottom: 2%;
   border-bottom: 3px solid var(--footer-color);
-  font-family:'Times New Roman', Times, serif;
+  font-family:'Inter', Times, serif;
   font-weight: 700;
 }
 
