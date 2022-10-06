@@ -501,7 +501,7 @@ iframe {
   }
 
   .topics-container {
-    margin: 0 6%;
+    margin: 0 6vw;
   }
 
   .topic-title {
@@ -726,12 +726,13 @@ iframe {
 
 .faq-answer {
   padding: 0 5px;
-  margin: 2px;
+  margin: 2px 20px;
   text-align: justify;
   background-color: none;
   display: none;
   overflow: hidden;
 }
+
 .faq-page:after {
   content: "\02795";
   /* Unicode character for "plus" sign (+) */
@@ -770,7 +771,7 @@ iframe {
 /* =================Contact page================================== */
 
 .contactTitle {
-  padding: 25px;
+  padding: 0 25px;
   text-align: center;
 }
 
@@ -780,7 +781,7 @@ iframe {
 
 #name {
   margin-bottom: 5px;
-  margin-left: calc(50vw - (300px/2));
+  margin-left: calc(44vw - (300px/2));
   width: 300px;
   height: 25px;
   border: 2px solid var(--navbar-color);
@@ -789,7 +790,7 @@ iframe {
 
 #email {
   margin-bottom: 5px;
-  margin-left: calc(50vw - (300px/2));
+  margin-left: calc(44vw - (300px/2));
   width: 300px;
   height: 25px;
   border: 2px solid var(--navbar-color);
@@ -798,7 +799,7 @@ iframe {
 
 #message {
   margin-bottom: 5px;
-  margin-left: calc(50vw - (300px/2));
+  margin-left: calc(44vw - (300px/2));
   width: 300px;
   height: 80px;
   border: 2px solid var(--navbar-color);
@@ -807,7 +808,7 @@ iframe {
 
 #submitbutton {
   margin-bottom: 5px;
-  margin-left: calc(50vw - (100px/2));
+  margin-left: calc(44vw - (100px/2));
   width: 100px;
   height: 30px;
   border: 2px solid rgb(125, 162, 237);
@@ -825,6 +826,7 @@ text-align: center;
 .listcontact {
   margin-left: 10px;
   text-align: center;
+  list-style: none;
 }
 
 form {
@@ -838,7 +840,7 @@ form {
   
   #name{
   margin-bottom: 5px;
-  margin-left: calc(50vw - (400px/2));
+  margin-left: calc(44vw - (400px/2));
   width: 400px;
   height: 35px;
   border: 2px solid var(--navbar-color);
@@ -847,7 +849,7 @@ form {
   
   #email{
   margin-bottom: 5px;
-  margin-left: calc(50vw - (400px/2));
+  margin-left: calc(44vw - (400px/2));
   width: 400px;
   height: 35px;
   border: 2px solid var(--navbar-color);
@@ -857,7 +859,7 @@ form {
   
   #message{
   margin-bottom: 5px;
-  margin-left: calc(50vw - (400px/2));
+  margin-left: calc(44vw - (400px/2));
   width: 400px;
   height: 100px;
   border: 2px solid var(--navbar-color);
@@ -866,7 +868,7 @@ form {
   
   #submitbutton{
     margin-bottom: 5px;
-    margin-left: calc(50vw - (140px/2));
+    margin-left: calc(44vw - (140px/2));
     width: 140px;
     height: 40px;
     border: 2px solid rgb(125, 162, 237);
