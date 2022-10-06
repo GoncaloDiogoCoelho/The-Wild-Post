@@ -99,7 +99,7 @@ const containerListArticles = document.querySelector(".containerListArticles");
 
 function createCard(title, sum, imgUrl, link) {
   const cardArticle = document.createElement("a");
-  cardArticle.classList.add("cardArticle");
+  cardArticle.classList.add("cardArticle", "topic-box");
   cardArticle.href = link;
   containerListArticles.appendChild(cardArticle);
 
@@ -112,8 +112,8 @@ function createCard(title, sum, imgUrl, link) {
   const divCardTitle = document.createElement("h4");
   const divCardSum = document.createElement("p");
   divCardText.classList.add("divCardText");
-  divCardTitle.classList.add("divCardTitle");
-  divCardSum.classList.add("divCardTitle");
+  divCardTitle.classList.add("divCardTitle", "report-title");
+  divCardSum.classList.add("divCardSum", "article-content");
   divCardTitle.innerHTML = title;
   divCardSum.innerHTML = sum;
   divCardText.appendChild(divCardTitle);

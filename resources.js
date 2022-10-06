@@ -87,7 +87,7 @@ const arrayResourcesArticlesObject = [
     type: "html",
     resume:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitirepudiandae, porro iure tempora totam sed officiis ut odio dolore idin beatae perspiciatis..",
-    img: "url('articles/article-1_html_img_small.jpg')",
+    img: "articles/article-1_html_img_small.png",
     imgBig: "url('articles/article-1_html_img_big.png')",
     link: "./articles/article-1_html.html",
   },
@@ -144,7 +144,7 @@ const containerListArticles = document.querySelector(".containerListArticles");
 
 function createCard(title, sum, imgUrl, link) {
   const cardArticle = document.createElement("a");
-  cardArticle.classList.add("cardArticle");
+  cardArticle.classList.add("cardArticle", "topic-box");
   cardArticle.href = link;
   containerListArticles.appendChild(cardArticle);
 
@@ -157,8 +157,8 @@ function createCard(title, sum, imgUrl, link) {
   const divCardTitle = document.createElement("h4");
   const divCardSum = document.createElement("p");
   divCardText.classList.add("divCardText");
-  divCardTitle.classList.add("divCardTitle");
-  divCardSum.classList.add("divCardTitle");
+  divCardTitle.classList.add("divCardTitle", "report-title");
+  divCardSum.classList.add("divCardSum", "article-content");
   divCardTitle.innerHTML = title;
   divCardSum.innerHTML = sum;
   divCardText.appendChild(divCardTitle);
