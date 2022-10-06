@@ -518,18 +518,23 @@ iframe {
 
 .cardArticle {
   display: flex;
+  justify-content: center;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2) inset;
 }
 
 .divCardImage {
-  width: 100%;
+  width: 40vw;
   background-size: contain;
   background-repeat: no-repeat;
   display: flex;
   padding: auto;
+  padding: 50px 0 50px 0;
 }
 
 .divCardText {
   text-align: justify;
+  padding: 30px;
+  width: 400px;
 }
 
 .cardArticle:nth-child(even) {
@@ -555,7 +560,7 @@ iframe {
   grid-template: auto;
 }
 
-/*=====================FAQ page=======================================*/
+/*=====================FAQ page=======================================/
 /* Style the buttons that are used to open and close the faq-page body */
 
 .faq-main{
@@ -638,6 +643,27 @@ flex-direction: column;
   /* Unicode character for "minus" sign (-) */
 }
 
+@media screen and (min-width: 1024px) {
+  .faq-img {
+    display: flex;
+    width: cover;
+    height: 350px;
+    justify-content: center;
+    object-fit: cover;
+    padding: 5px;
+  }
+
+  .faq-answer {
+    padding: 0 5px;
+    margin-left: 80px;
+    margin-right: 80px;
+    text-align: justify;
+    background-color:none;
+    display: none;
+    overflow: hidden;
+}
+  
+}
 
 /* =================Contact page================================== */
 
@@ -652,7 +678,7 @@ flex-direction: column;
 
 #name{
   margin-bottom: 5px;
-  margin-left: 10px;
+  margin-left: calc(50vw - (300px/2));
   width: 300px;
   height: 25px;
   border: 2px solid var(--navbar-color);
@@ -661,7 +687,7 @@ flex-direction: column;
 
 #email{
   margin-bottom: 5px;
-  margin-left: 10px;
+  margin-left: calc(50vw - (300px/2));
   width: 300px;
   height: 25px;
   border: 2px solid var(--navbar-color);
@@ -671,7 +697,7 @@ flex-direction: column;
 
 #message{
   margin-bottom: 5px;
-  margin-left: 10px;
+  margin-left: calc(50vw - (300px/2));
   width: 300px;
   height: 80px;
   border: 2px solid var(--navbar-color);
@@ -680,7 +706,7 @@ flex-direction: column;
 
 #submitbutton{
   margin-bottom: 5px;
-  margin-left: 114px;
+  margin-left: calc(50vw - (100px/2));
   width: 100px;
   height: 30px;
   border: 2px solid rgb(125, 162, 237);
@@ -692,10 +718,13 @@ flex-direction: column;
 
 .otherresources{
 padding: 40px;
+text-align: center;
+
 }
 
 .listcontact{
   margin-left: 10px;
+  text-align: center;
 }
 
 
@@ -705,14 +734,45 @@ form {
   flex-direction: column;
 }
 
-label {
-  margin-bottom: 10px;
-}
 
-input {
-  margin-bottom: 20px;
-}
-
-textarea {
-  margin-bottom: 20px;
+@media screen and (min-width: 1024px) {
+  
+  #name{
+  margin-bottom: 5px;
+  margin-left: calc(50vw - (400px/2));
+  width: 400px;
+  height: 35px;
+  border: 2px solid var(--navbar-color);
+  border-radius: 5px;
+  }
+  
+  #email{
+  margin-bottom: 5px;
+  margin-left: calc(50vw - (400px/2));
+  width: 400px;
+  height: 35px;
+  border: 2px solid var(--navbar-color);
+  border-radius: 5px;
+    
+  }
+  
+  #message{
+  margin-bottom: 5px;
+  margin-left: calc(50vw - (400px/2));
+  width: 400px;
+  height: 100px;
+  border: 2px solid var(--navbar-color);
+  border-radius: 5px;
+  }
+  
+  #submitbutton{
+    margin-bottom: 5px;
+    margin-left: calc(50vw - (140px/2));
+    width: 140px;
+    height: 40px;
+    border: 2px solid rgb(125, 162, 237);
+    background-color:  var(--navbar-sub-color);
+    border-radius: 5px;
+    
+  }
 }
