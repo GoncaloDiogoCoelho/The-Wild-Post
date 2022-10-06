@@ -414,6 +414,24 @@ iframe {
   margin: auto;
 }
 
+@media screen and (min-width: 320px) {
+  .d-md-block {
+    display: block !important;
+  }
+
+  h5 {
+    width: 100%;
+    color:rgba(255, 255, 255);
+    text-shadow: 7px 8px 9px #000;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+
+  .carousel-caption p {
+    display: none;
+  }
+}
 
 @media screen and (min-width: 450px) {
   .carousel-control-prev, .carousel-control-next {
@@ -424,6 +442,11 @@ iframe {
   .carousel-control-next-icon, .carousel-control-prev-icon {
       width: 2rem;
       height: 2rem;
+  }
+
+  h5 {
+    font-size: 8vw;
+    margin-bottom: 1rem;
   }
 }
 
@@ -436,13 +459,12 @@ iframe {
 
   h5 {
       width: 34rem;
-      color:rgba(255, 255, 255);
-      text-shadow: 5px 6px 7px #000;
       font-size: 4rem;
       margin-left: -5rem;
   }
 
   .carousel-caption p {
+      display: block;
       width: 30rem;
       color:rgba(255, 255, 255);
       text-shadow: 5px 6px 7px #000;
@@ -540,21 +562,43 @@ iframe {
 
 .title-article {
   text-align: center;
-  margin: 16px;
+  margin: 1.5rem 2rem 2rem;
+  border-bottom: 3px solid var(--footer-color);
+  font-weight: 700;
+  font-size: 2rem;
 }
 
 .article-img {
-  float: left;
-  height: 100px;
-  width: auto;
-  padding: 0 5px 5px 0;
+  display: block;
+  width: 50%;
+  margin: auto;
+  padding-bottom: 0.5rem;
+}
+
+.first-letter {
+  color: var(--footer-color);
+  font-size: 2.5rem;
+  font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 .article-text {
   text-align: justify;
-  grid-template: auto;
+  line-height: 1.5rem;
+  margin: 1rem 2.5rem;
 }
 
+@media screen and (min-width: 600px) {
+  .article-img {
+    float: left;
+    margin: 0 1rem 1rem 2.5rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .article-img {
+    width: 35%;
+  }
+}
 /*=====================FAQ page=======================================*/
 /* Style the buttons that are used to open and close the faq-page body */
 
