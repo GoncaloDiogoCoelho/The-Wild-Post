@@ -596,7 +596,11 @@ iframe {
 @media screen and (min-width: 600px) {
   .article-img {
     float: left;
-    margin: 0 1rem 1rem 2.5rem;
+    margin: 0 1rem 1rem 6rem;
+  }
+
+  .article-text {
+    margin: 1rem 6rem;
   }
 }
 
