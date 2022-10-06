@@ -44,7 +44,7 @@ function createTopics(topicTitle, imageLink, altText, articleTitle, paragraph, p
         topics.appendChild(oneTopic);
 
         const oneTopicTitle = document.createElement("h2");
-        oneTopicTitle.classList.add("topic-title");
+        oneTopicTitle.classList.add("topic-title", "main-title");
         oneTopicTitle.innerHTML = `${topicTitle}`;
         oneTopic.appendChild(oneTopicTitle);
     
