@@ -9,16 +9,16 @@ main.appendChild(topics);
 //Object with the contents of each topic
 const topicsContent = [
     {
-        articleLink: "#",
+        articleLink: "./articles/article-2_event.html",
         topicTitle: "News / Events",
         articleTitle: "Event 1",
-        picture: "./src/article-1_img_big.jpg",
+        picture: "./articles/article-2_event_img_big.jpg",
         alternative: "A crowd running the marathon",
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis repudiandae, porro iure tempora totam sed officiis ut odio dolore id in beatae perspiciatis.",
         descriptionTwo: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis repudiandae, porro iure tempora totam sed officiis ut odio dolore id in beatae perspiciatis."
     }, 
     {
-        articleLink: "#",
+        articleLink: "./articles/article-2_quest.html",
         topicTitle: "News / Quests",
         articleTitle: "Quest 1",
         picture: "./articles/article-2_quest_img_big.png",
@@ -27,7 +27,7 @@ const topicsContent = [
         descriptionTwo: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis repudiandae, porro iure tempora totam sed officiis ut odio dolore id in beatae perspiciatis."
     }, 
     {
-        articleLink: "#",
+        articleLink: "./articles/article-2_html.html",
         topicTitle: "Resources / HTML",
         articleTitle: "HTML 1",
         picture: "./articles/article-2_html_img_big.png",
