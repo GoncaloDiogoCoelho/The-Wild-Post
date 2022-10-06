@@ -20,8 +20,14 @@ body {
   background-color: var(--background-color);
 }
 
-h2 {
+h1 {
   text-align: center;
+}
+
+main {
+  margin-top: 66px;
+  margin-left: 16px;
+  margin-right: 16px;
 }
 
 /* ========== Header Menu - Burger Menu ========== */
@@ -33,7 +39,7 @@ h2 {
 .logoHeader {
   color: var(--background-color);
   text-decoration-line: none;
-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .logoHeader {
@@ -146,6 +152,9 @@ box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .toggle-resources li {
+display: none;
+}
+  .toggle-resources li {
   box-shadow: 0 -1.5px 0 var(--navbar-color) inset;
 }
 
@@ -183,22 +192,21 @@ box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   list-style: none;
   padding-top: 20px;
 }
-.socials ul li a{
+.socials ul li a {
   color: var(--background-color);
   padding: 5px;
 }
-.othersFooter{
+.othersFooter {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 30px 15px 0 15px;
   font-size: 0.8rem;
-
 }
 .othersFooter p a {
   text-decoration: none;
   color: var(--background-color);
-} 
+}
 /* ========== FOOTER BAR ========== */
 
 .navigation input:checked ~ .burger {
@@ -272,6 +280,10 @@ box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     transition: 0.2s;
     z-index: 1;
   }
+  .menuBurger input:checked ~ .toggle-resources li {
+    display: block;
+    opacity: 100;
+  }
   .resourcesTab input:checked ~ .faqDown {
     padding-top: 100px;
   }
@@ -302,7 +314,7 @@ box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     transition: 0.2s ease-in-out;
   }
 
-  .menuBurger input:checked ~ .toggle-resources {
+.menuBurger input:checked ~ .toggle-resources {
     display: block;
     top: 50px;
     transition: 0.3s;
@@ -310,17 +322,23 @@ box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     transition: 0.2s;
     z-index: 1;
   }
+  .menuBurger input:checked ~ .toggle-resources li {
+    display: block;
+    opacity: 100;
+  }
   .toggle-resources-check:hover ~ .resourcesTab {
     box-shadow: 500px 0 0 rgba(255, 255, 255, 0.1) inset,
-    0 -5px 0 rgba(255, 255, 255, 0.5) inset;
+      0 -5px 0 rgba(255, 255, 255, 0.5) inset;
     padding: 15px 25px 25px 25px;
+
   }
 }
 /* ========== Header Menu - Burger Menu ========== */
 
 /*=========Main page & Game page==========================*/
 /*Image carousel*/
-.carousel-control-prev, .carousel-control-next {
+.carousel-control-prev,
+.carousel-control-next {
   border-radius: 1rem 1rem;
   background-color: rgba(255, 255, 255, 0.5);
   width: 15%;
@@ -329,11 +347,11 @@ box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   top: 47%;
 }
 
-.carousel-control-next-icon, .carousel-control-prev-icon {
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
   width: 1rem;
   height: 1rem;
 }
-
 
 /*Topic news*/
 .topics-container {
@@ -341,10 +359,9 @@ box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .topic-title, .game-title {
-  margin-top: 8%;
   margin-bottom: 2%;
   border-bottom: 3px solid var(--footer-color);
-  font-family:'Times New Roman', Times, serif;
+  font-family:'Inter', Times, serif;
   font-weight: 700;
 }
 
@@ -374,7 +391,7 @@ box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   margin-left: 1rem;
   background-color: rgba(0, 0, 0, 0);
   color: var(--footer-color);
-  font-family:'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-weight: 700;
 }
 
@@ -382,7 +399,7 @@ box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   width: 100%;
   text-align: justify;
   padding-right: 0.5rem;
-  font-family:'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .article-content-hide {
@@ -440,14 +457,16 @@ iframe {
 }
 
 @media screen and (min-width: 450px) {
-  .carousel-control-prev, .carousel-control-next {
-      width: 10%;
-      height: 10%;
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 10%;
+    height: 10%;
   }
-  
-  .carousel-control-next-icon, .carousel-control-prev-icon {
-      width: 2rem;
-      height: 2rem;
+
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon {
+    width: 2rem;
+    height: 2rem;
   }
 
   h5 {
@@ -458,9 +477,9 @@ iframe {
 
 @media screen and (min-width: 750px) {
   .carousel {
-      display: block;
-      margin: auto;
-      width: 750px;
+    display: block;
+    margin: auto;
+    width: 750px;
   }
 
   h5 {
@@ -484,21 +503,22 @@ iframe {
     margin: 0 6%;
   }
 
-  .topic-title, .game-title {
+  .topic-title,
+  .game-title {
     margin-top: 4%;
   }
 
-   .article-images {
-      width: 320px;
-      height: auto;
+  .article-images {
+    width: 320px;
+    height: auto;
   }
 
   .article-content-hide {
-      width: 100%;
-      display: initial;
-      text-align: justify;
-      padding-right: 0.5rem;
-      font-family:'Times New Roman', Times, serif;
+    width: 100%;
+    display: initial;
+    text-align: justify;
+    padding-right: 0.5rem;
+    font-family: "Times New Roman", Times, serif;
   }
 
   .read-more {
@@ -508,23 +528,22 @@ iframe {
   }
 
   iframe {
-      width: 725px;
-      height: 550px;
+    width: 725px;
+    height: 550px;
   }
 }
 
 @media screen and (min-width: 1000px) {
   .carousel {
-      display: block;
-      margin: auto;
-      width: 70%;
+    display: block;
+    margin: auto;
+    width: 70%;
   }
 
   .topic-box {
-      gap: 2%;
+    gap: 2%;
   }
 }
-
 
 /* =================Topic page========================= */
 
@@ -532,6 +551,11 @@ iframe {
   height: 200px;
   width: 100%;
   background-size: cover;
+  margin: 16px 0;
+}
+
+.randomTop > * {
+  width: 50%;
 }
 
 .tagContainer {
@@ -546,23 +570,34 @@ iframe {
 
 .cardArticle {
   display: flex;
+  justify-content: space-between;
+  border: #000, 4px, solid;
+  border-radius: 4px;
 }
 
-.divCardImage {
-  width: 200px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  display: flex;
-  padding: auto;
+.cardImage {
+  width: 20%;
+  height: fit-content;
 }
 
 .divCardText {
   text-align: justify;
+  padding: 30px;
+  width: 400px;
 }
 
 .cardArticle:nth-child(even) {
   flex-direction: row-reverse;
 }
+
+.tagContainer {
+  margin: 16px 0;
+  height: 16px;
+}
+
+.tagContainer h4 {
+  margin: 0 8px;
+  background-image: ;
 
 /*=========Article==========================*/
 
@@ -612,14 +647,13 @@ iframe {
 /*=====================FAQ page=======================================*/
 /* Style the buttons that are used to open and close the faq-page body */
 
-.faq-main{
+main{
   padding-top:60px;
   padding-bottom: 60px;
 }
 
-.faq-heading{
-text-align: center;
-
+.faq-heading {
+  text-align: center;
 }
 .faq-img {
   display: flex;
@@ -628,19 +662,18 @@ text-align: center;
   justify-content: center;
   object-fit: cover;
   padding: 5px;
-
 }
 /*body{
   font-family: 'Work Sans', sans-serif;
 } */
-.faq-heading{
+.faq-heading {
   border-bottom: #777;
   padding: 20px 60px;
 }
-.faq-container{
-display: flex;
-justify-content: center;
-flex-direction: column;
+.faq-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 /* Style the buttons that are used to open and close the faq-page body */
@@ -654,9 +687,7 @@ flex-direction: column;
   outline: none;
   transition: 0.4s;
   margin: auto;
-  
 }
-
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .activeus,
@@ -666,7 +697,7 @@ flex-direction: column;
 /* Style the faq-page panel. Note: hidden by default */
 .faq-body {
   padding: 0 18px;
-  background-color:none;
+  background-color: none;
   display: none;
   overflow: hidden;
 }
@@ -675,12 +706,12 @@ flex-direction: column;
   padding: 0 5px;
   margin: 2px;
   text-align: justify;
-  background-color:none;
+  background-color: none;
   display: none;
   overflow: hidden;
 }
 .faq-page:after {
-  content: '\02795';
+  content: "\02795";
   /* Unicode character for "plus" sign (+) */
   font-size: 13px;
   color: #777;
@@ -692,66 +723,87 @@ flex-direction: column;
   /* Unicode character for "minus" sign (-) */
 }
 
+@media screen and (min-width: 1024px) {
+  .faq-img {
+    display: flex;
+    width: cover;
+    height: 350px;
+    justify-content: center;
+    object-fit: cover;
+    padding: 5px;
+  }
+
+  .faq-answer {
+    padding: 0 5px;
+    margin-left: 80px;
+    margin-right: 80px;
+    text-align: justify;
+    background-color:none;
+    display: none;
+    overflow: hidden;
+}
+  
+}
 
 /* =================Contact page================================== */
 
-.contactTitle{
+.contactTitle {
   padding: 25px;
   text-align: center;
 }
 
-#contact{
- padding-top: 10px;
+#contact {
+  padding-top: 10px;
 }
 
-#name{
+#name {
   margin-bottom: 5px;
-  margin-left: 10px;
+  margin-left: calc(50vw - (300px/2));
   width: 300px;
   height: 25px;
   border: 2px solid var(--navbar-color);
   border-radius: 5px;
 }
 
-#email{
+#email {
   margin-bottom: 5px;
-  margin-left: 10px;
+  margin-left: calc(50vw - (300px/2));
   width: 300px;
   height: 25px;
   border: 2px solid var(--navbar-color);
   border-radius: 5px;
-  
 }
 
-#message{
+#message {
   margin-bottom: 5px;
-  margin-left: 10px;
+  margin-left: calc(50vw - (300px/2));
   width: 300px;
   height: 80px;
   border: 2px solid var(--navbar-color);
   border-radius: 5px;
 }
 
-#submitbutton{
+#submitbutton {
   margin-bottom: 5px;
-  margin-left: 114px;
+  margin-left: calc(50vw - (100px/2));
   width: 100px;
   height: 30px;
   border: 2px solid rgb(125, 162, 237);
-  background-color:  var(--navbar-sub-color);
+  background-color: var(--navbar-sub-color);
   border-radius: 5px;
-  
 }
 
 
 .otherresources{
 padding: 40px;
+text-align: center;
+
 }
 
-.listcontact{
+.listcontact {
   margin-left: 10px;
+  text-align: center;
 }
-
 
 form {
   margin-top: 30px;
@@ -759,14 +811,45 @@ form {
   flex-direction: column;
 }
 
-label {
-  margin-bottom: 10px;
-}
 
-input {
-  margin-bottom: 20px;
-}
-
-textarea {
-  margin-bottom: 20px;
+@media screen and (min-width: 1024px) {
+  
+  #name{
+  margin-bottom: 5px;
+  margin-left: calc(50vw - (400px/2));
+  width: 400px;
+  height: 35px;
+  border: 2px solid var(--navbar-color);
+  border-radius: 5px;
+  }
+  
+  #email{
+  margin-bottom: 5px;
+  margin-left: calc(50vw - (400px/2));
+  width: 400px;
+  height: 35px;
+  border: 2px solid var(--navbar-color);
+  border-radius: 5px;
+    
+  }
+  
+  #message{
+  margin-bottom: 5px;
+  margin-left: calc(50vw - (400px/2));
+  width: 400px;
+  height: 100px;
+  border: 2px solid var(--navbar-color);
+  border-radius: 5px;
+  }
+  
+  #submitbutton{
+    margin-bottom: 5px;
+    margin-left: calc(50vw - (140px/2));
+    width: 140px;
+    height: 40px;
+    border: 2px solid rgb(125, 162, 237);
+    background-color:  var(--navbar-sub-color);
+    border-radius: 5px;
+    
+  }
 }
