@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;600&display=swap" rel="stylesheet">
+    
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,6 +12,43 @@
     <title>Event 1 stuff</title>
   </head>
   <body>
+    <header class="header">
+      <!-- #=====# Burger Menu #=====# -->
+      <div class="headeLogo">
+        <a href="../main-page.html">
+          <img
+            src="imgs/jornal-wild-post-logo.png"
+            width="140px"
+            height="35px"
+            alt="</>jornal"
+            class="logoHeader"
+          />
+        </a>
+      </div>
+
+      <div class="navigation">
+        <input type="checkbox" class="toggle-menu" />
+        <div class="burger"></div>
+
+        <ul class="menuBurger">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../news.html">News</a></li>
+          <li>
+            <input type="checkbox" class="toggle-resources-check" />
+            <a href="#" class="resourcesMenu">Resources</a>
+            <ul class="toggle-resources">
+              <li><a href="article-1_js.html">Articles</a></li>
+              <li><a href="article-1_quest.html">Quests</a></li>
+              <li><a href="article-1_event.html">Events</a></li>
+            </ul>
+          </li>
+          <li><a href="../fqa.html">FAQ</a></li>
+          <li><a href="../game.html">Game</a></li>
+          <li><a href="../contact us.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <!-- #=====# Burger Menu #=====# -->
+    </header>
     <main>
       <h2 class="title-article">Event 1 stuff</h2>
 
@@ -51,5 +92,40 @@
         </div>
       </section>
     </main>
+              <!-- #=====# FOOTER BAR #=====# -->
+   
+              <footer>
+                <div class="footer">
+                    <div class="socials">
+                        <ul>
+                          <li><a href="" class="instagram" alt="Instagram">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                          </a></li>
+                          <li><a href="" class="facebook" alt="Facebook">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                          </a></li>
+                          <li><a href="" class="twitter" alt="Twitter">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                          </a></li>
+                          <li><a href="" class="linkedin" alt="LinkedIn">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                          </a></li>
+                        </ul>
+                    </div>
+                    <div class="othersFooter">
+                        <div class="copyright">
+                            <p>&copy; All Rights Reserved - The Wild Post Co.</p>
+                        </div>
+                        <div class="contactLink">
+                            <p><a href="contact us.html">Contact Us</a></p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+          <!-- #=====# FOOTER BAR #=====# -->
+              <!-- #=====# FOOTER LOGOS LIBRARY #=====# -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- #=====# FOOTER LOGOS LIBRARY #=====# -->
   </body>
 </html>
