@@ -22,7 +22,7 @@ body {
   background-color: var(--background-color);
 }
 
-h2 {
+h1 {
   text-align: center;
 }
 
@@ -154,6 +154,9 @@ main {
 }
 
 .toggle-resources li {
+display: none;
+}
+  .toggle-resources li {
   box-shadow: 0 -1.5px 0 var(--navbar-color) inset;
 }
 
@@ -279,6 +282,10 @@ main {
     transition: 0.2s;
     z-index: 1;
   }
+  .menuBurger input:checked ~ .toggle-resources li {
+    display: block;
+    opacity: 100;
+  }
   .resourcesTab input:checked ~ .faqDown {
     padding-top: 100px;
   }
@@ -309,7 +316,7 @@ main {
     transition: 0.2s ease-in-out;
   }
 
-  .menuBurger input:checked ~ .toggle-resources {
+.menuBurger input:checked ~ .toggle-resources {
     display: block;
     top: 50px;
     transition: 0.3s;
@@ -317,10 +324,15 @@ main {
     transition: 0.2s;
     z-index: 1;
   }
+  .menuBurger input:checked ~ .toggle-resources li {
+    display: block;
+    opacity: 100;
+  }
   .toggle-resources-check:hover ~ .resourcesTab {
     box-shadow: 500px 0 0 rgba(255, 255, 255, 0.1) inset,
       0 -5px 0 rgba(255, 255, 255, 0.5) inset;
     padding: 15px 25px 25px 25px;
+
   }
 }
 /* ========== Header Menu - Burger Menu ========== */
@@ -348,12 +360,10 @@ main {
   margin: 0 3%;
 }
 
-.topic-title,
-.game-title {
-  margin-top: 8%;
+.topic-title, .game-title {
   margin-bottom: 2%;
   border-bottom: 3px solid var(--footer-color);
-  font-family: "Times New Roman", Times, serif;
+  font-family:'Inter', Times, serif;
   font-weight: 700;
 }
 
@@ -543,6 +553,8 @@ iframe {
 
 .divCardText {
   text-align: justify;
+  padding: 30px;
+  width: 400px;
 }
 
 .cardArticle:nth-child(even) {
@@ -557,7 +569,6 @@ iframe {
 .tagContainer h4 {
   margin: 0 8px;
   background-image: ;
-}
 
 /*=========Article==========================*/
 
@@ -578,11 +589,11 @@ iframe {
   grid-template: auto;
 }
 
-/*=====================FAQ page=======================================*/
+/*=====================FAQ page=======================================/
 /* Style the buttons that are used to open and close the faq-page body */
 
-.faq-main {
-  padding-top: 60px;
+main{
+  padding-top:60px;
   padding-bottom: 60px;
 }
 
@@ -657,6 +668,28 @@ iframe {
   /* Unicode character for "minus" sign (-) */
 }
 
+@media screen and (min-width: 1024px) {
+  .faq-img {
+    display: flex;
+    width: cover;
+    height: 350px;
+    justify-content: center;
+    object-fit: cover;
+    padding: 5px;
+  }
+
+  .faq-answer {
+    padding: 0 5px;
+    margin-left: 80px;
+    margin-right: 80px;
+    text-align: justify;
+    background-color:none;
+    display: none;
+    overflow: hidden;
+}
+  
+}
+
 /* =================Contact page================================== */
 
 .contactTitle {
@@ -670,7 +703,7 @@ iframe {
 
 #name {
   margin-bottom: 5px;
-  margin-left: 10px;
+  margin-left: calc(50vw - (300px/2));
   width: 300px;
   height: 25px;
   border: 2px solid var(--navbar-color);
@@ -679,7 +712,7 @@ iframe {
 
 #email {
   margin-bottom: 5px;
-  margin-left: 10px;
+  margin-left: calc(50vw - (300px/2));
   width: 300px;
   height: 25px;
   border: 2px solid var(--navbar-color);
@@ -688,7 +721,7 @@ iframe {
 
 #message {
   margin-bottom: 5px;
-  margin-left: 10px;
+  margin-left: calc(50vw - (300px/2));
   width: 300px;
   height: 80px;
   border: 2px solid var(--navbar-color);
@@ -697,7 +730,7 @@ iframe {
 
 #submitbutton {
   margin-bottom: 5px;
-  margin-left: 114px;
+  margin-left: calc(50vw - (100px/2));
   width: 100px;
   height: 30px;
   border: 2px solid rgb(125, 162, 237);
@@ -705,12 +738,16 @@ iframe {
   border-radius: 5px;
 }
 
-.otherresources {
-  padding: 40px;
+
+.otherresources{
+padding: 40px;
+text-align: center;
+
 }
 
 .listcontact {
   margin-left: 10px;
+  text-align: center;
 }
 
 form {
@@ -719,14 +756,45 @@ form {
   flex-direction: column;
 }
 
-label {
-  margin-bottom: 10px;
-}
 
-input {
-  margin-bottom: 20px;
-}
-
-textarea {
-  margin-bottom: 20px;
+@media screen and (min-width: 1024px) {
+  
+  #name{
+  margin-bottom: 5px;
+  margin-left: calc(50vw - (400px/2));
+  width: 400px;
+  height: 35px;
+  border: 2px solid var(--navbar-color);
+  border-radius: 5px;
+  }
+  
+  #email{
+  margin-bottom: 5px;
+  margin-left: calc(50vw - (400px/2));
+  width: 400px;
+  height: 35px;
+  border: 2px solid var(--navbar-color);
+  border-radius: 5px;
+    
+  }
+  
+  #message{
+  margin-bottom: 5px;
+  margin-left: calc(50vw - (400px/2));
+  width: 400px;
+  height: 100px;
+  border: 2px solid var(--navbar-color);
+  border-radius: 5px;
+  }
+  
+  #submitbutton{
+    margin-bottom: 5px;
+    margin-left: calc(50vw - (140px/2));
+    width: 140px;
+    height: 40px;
+    border: 2px solid rgb(125, 162, 237);
+    background-color:  var(--navbar-sub-color);
+    border-radius: 5px;
+    
+  }
 }
